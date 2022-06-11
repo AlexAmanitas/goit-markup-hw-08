@@ -1,0 +1,35 @@
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--font-color);
+	/* background-color: var(--background-color) ; */
+}
+
+$button-hover-color: #188ce8;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+$white: #ffffff;
+$black: #000000;
+$font-color: #212121; /*var(--font-color)*/
+$accent-color: #2196f3; /*var(--accent-color)*/
+$footer-color: #2f303a; /*var(--footer-color)*/
+$background-color: #e5e5e5; /*var(--background-color)*/
+$team-bcgr-color: #f5f4fa;
+$icon-color: #afb1b8;
+$link-color: #757575; /*var(--link-color)*/
+$hero-color: #2f303a; /*var(--hero-color)*/
+$button-icon-nonactiv-color: #f5f4fa;
+$header-border-color: #ececec;
+$portfolio-border-color: #eeeeee;
+$footer-link-color: rgba(255, 255, 255, 0.6);
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+	/* outline: 1px solid green; */
+}
+
+.section {
+	padding: 94px 0;
+	/* outline: 1px solid red; */
+}

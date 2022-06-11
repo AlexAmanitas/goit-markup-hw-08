@@ -1,0 +1,98 @@
+.footer {
+	padding: 60px 0;
+
+	background-color: $footer-color;
+}
+
+.footer__block {
+	display: flex;
+}
+
+.footer__address {
+	display: block;
+	width: 231px;
+}
+
+.address {
+	display: block;
+	margin-top: 20px;
+}
+
+.address__label {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: $white;
+}
+
+.address__link {
+	margin-top: 9px;
+
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.1;
+	letter-spacing: 0.03em;
+	color: $footer-link-color;
+}
+
+.footer__network {
+	margin: 12px auto 40px 70px;
+}
+
+.footer__title {
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.network-block__link--footer {
+	background: rgba(255, 255, 255, 0.1);
+
+	transition: background-color 250ms $time-function;
+}
+
+.network-block__icon--footer {
+	fill: $white;
+}
+
+.footer-form {
+	margin-top: 10px;
+}
+
+.footer-form__wrap {
+	display: flex;
+	margin-top: 20px;
+}
+
+.footer-form__input {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	padding-left: 16px;
+
+	font-size: 16px;
+	line-height: 1.25;
+	width: 358px;
+	height: 50px;
+	letter-spacing: 0.03em;
+
+	color: rgba(255, 255, 255, 0.6);
+	background-color: $footer-color;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+
+.footer-form__button {
+	margin-left: 12px;
+}
+
+.main-button__icon {
+	margin-left: 10px;
+}

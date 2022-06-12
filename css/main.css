@@ -97,6 +97,15 @@ body {
   border: none;
   margin-left: auto;
   background-color: transparent;
+  color: #000;
+}
+
+.header__button:hover {
+  color: #2196f3;
+}
+
+.header__button.is-open {
+  z-index: 2;
 }
 
 .header__button.is-open .header__icon--menu {
@@ -104,13 +113,22 @@ body {
 }
 
 .header__button.is-open .header__icon--close {
-  position: absolute;
-  z-index: 5;
   display: block;
 }
 
 .header__icon--close {
   display: none;
+}
+
+.header__icon--close,
+.header__icon--menu {
+  fill: currentColor;
+}
+
+.header__icon--close:hover, .header__icon--close:focus,
+.header__icon--menu:hover,
+.header__icon--menu:focus {
+  fill: currentColor;
 }
 
 .header__menu {
@@ -125,7 +143,6 @@ body {
 
 .header__menu.is-open {
   display: block;
-  z-index: 1;
 }
 
 .nav {

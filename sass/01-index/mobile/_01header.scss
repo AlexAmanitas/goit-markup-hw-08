@@ -34,19 +34,38 @@
 	margin-left: auto;
 
 	background-color: transparent;
+	color: #000;
+
+	&:hover,
+	// &:focus
+	{
+		color: $accent-color;
+	}
+
+	&.is-open {
+		z-index: 2;
+	}
 
 	&.is-open .header__icon--menu {
 		display: none;
 	}
 
 	&.is-open .header__icon--close {
-		position: absolute;
-		z-index: 5;
 		display: block;
 	}
 }
 .header__icon--close {
 	display: none;
+}
+
+.header__icon--close,
+.header__icon--menu {
+	fill: currentColor;
+
+	&:hover,
+	&:focus {
+		fill: currentColor;
+	}
 }
 
 .header__menu {
@@ -62,7 +81,6 @@
 
 	&.is-open {
 		display: block;
-		z-index: 1;
 	}
 }
 

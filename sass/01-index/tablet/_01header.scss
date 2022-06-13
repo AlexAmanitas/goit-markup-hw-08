@@ -1,0 +1,149 @@
+.header {
+	@media screen and (min-width: $tablet) {
+		height: 80px;
+	}
+}
+
+.logo {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: $black;
+}
+
+.logo__web {
+	color: $accent-color;
+	margin-right: -7px;
+}
+
+.logo__footer {
+	color: $white;
+}
+
+.header__button {
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+}
+
+.header__menu {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.nav {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		margin-left: 88px;
+		align-items: center;
+
+		list-style-type: none;
+	}
+}
+
+.nav__item {
+	@media screen and (min-width: $tablet) {
+		margin-right: 50px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.nav__link {
+	@media screen and (min-width: $tablet) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+
+		color: $font-color;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+
+		transition: color 250ms $time-function;
+
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+}
+
+.nav__link--current {
+	@media screen and (min-width: $tablet) {
+		position: relative;
+
+		color: $accent-color;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+
+			display: block;
+			width: 100%;
+			height: 4px;
+
+			border-radius: 4px;
+			background-color: $accent-color;
+			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		}
+	}
+}
+
+.top-contacts {
+	@media screen and (min-width: $tablet) {
+		margin-left: auto;
+	}
+}
+
+.top-contacts__link {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		margin-left: auto;
+
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		color: $link-color;
+
+		transition: color 250ms $time-function;
+
+		&:last-child {
+			margin-top: 10px;
+		}
+
+		&:hover,
+		&:focus {
+			color: $accent-color;
+			fill: $accent-color;
+		}
+	}
+}
+
+.top-contacts__icon {
+	@media screen and (min-width: $tablet) {
+		align-self: center;
+		margin-right: 10px;
+
+		fill: currentColor;
+
+		&:hover {
+			fill: currentColor;
+		}
+	}
+}
+
+.social-list {
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+}

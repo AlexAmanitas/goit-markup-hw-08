@@ -21,22 +21,23 @@ $header-border-color: #ececec;
 $portfolio-border-color: #eeeeee;
 $footer-link-color: rgba(255, 255, 255, 0.6);
 $mobile: 480px;
-$tablet: 768px;
+$tablet: 767px;
 $desctop: 1200px;
 
 .container {
-	width: $mobile;
+	max-width: $mobile;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 15px;
 	outline: 1px solid green;
 
 	@media screen and (min-width: $tablet) {
-		width: $tablet;
+		max-width: $tablet;
+	}
 
-		@media screen and(min-width:$desctop) {
-			width: $desctop;
-		}
+	@media screen and(min-width:$desctop) {
+		width: $desctop;
 	}
 }
 

@@ -1,0 +1,47 @@
+.clients__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 33px;
+	/* identical to box height */
+
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.clients__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+
+	margin-top: 30px;
+}
+
+.clients__link {
+	display: flex;
+	width: 210px;
+	height: 92px;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid $icon-color;
+	border-radius: 4px;
+	color: $icon-color;
+
+	transition: color 250ms $time-function;
+
+	&:hover,
+	&:focus {
+		border: 1px solid $accent-color;
+		color: $accent-color;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	}
+}
+
+.clients__icon {
+	fill: currentColor;
+
+	&:hover,
+	&:focus {
+		fill: currentColor;
+	}
+}

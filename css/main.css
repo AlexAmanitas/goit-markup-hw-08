@@ -380,7 +380,8 @@ body {
 }
 
 .card__img {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
 }
 
 .card__body {

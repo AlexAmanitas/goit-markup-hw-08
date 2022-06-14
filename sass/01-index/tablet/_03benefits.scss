@@ -1,0 +1,11 @@
+@media screen and (min-width: $tablet) {
+	.benefits {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	.benefits__item {
+		width: 353px;
+	}
+}

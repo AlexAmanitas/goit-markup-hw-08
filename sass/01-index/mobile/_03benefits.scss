@@ -1,8 +1,10 @@
-.benefits__item {
-	margin-bottom: 30px;
+@media screen and (max-width: $tablet) {
+	.benefits__item {
+		margin-bottom: 30px;
 
-	&:last-child {
-		margin-bottom: 0px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
 	}
 }
 
@@ -17,7 +19,9 @@
 	background-color: $button-icon-nonactiv-color;
 }
 .benefits__title {
-	text-align: center;
+	@media screen and (max-width: $tablet) {
+		text-align: center;
+	}
 
 	font-weight: 700;
 	font-size: 14px;

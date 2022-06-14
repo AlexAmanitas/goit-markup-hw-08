@@ -4,9 +4,11 @@
 	background-color: $footer-color;
 }
 
-.footer__address {
-	margin-right: auto;
-	margin-left: auto;
+@media screen and (max-width: $tablet) {
+	.footer__address {
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 .address {

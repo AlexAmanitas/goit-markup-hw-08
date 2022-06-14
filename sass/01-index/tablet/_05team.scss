@@ -1,0 +1,11 @@
+@media screen and (min-width: $tablet) {
+	.card__img {
+		width: 353px;
+	}
+}
+
+.team__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}

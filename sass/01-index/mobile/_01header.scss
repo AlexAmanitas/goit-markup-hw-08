@@ -3,16 +3,15 @@
 	align-items: center;
 	margin-top: 0;
 	border-bottom: 1px solid $header-border-color;
-	@media screen and (max-width: $tablet) {
-		position: relative;
-		height: 60px;
-	}
+
+	position: relative;
+	height: 60px;
 }
 
 .logo {
 	font-family: "Raleway";
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 24px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: $black;
@@ -28,8 +27,8 @@
 	color: $white;
 }
 
-.header__button {
-	@media screen and (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
+	.header__button {
 		display: inline-flex;
 		padding: 0;
 		margin: 0;
@@ -70,10 +69,8 @@
 			fill: currentColor;
 		}
 	}
-}
 
-.header__menu {
-	@media screen and (max-width: $tablet) {
+	.header__menu {
 		display: none;
 
 		position: absolute;
@@ -85,21 +82,15 @@
 		background-color: $white;
 
 		&.is-open {
-			@media screen and (max-width: $tablet) {
-				display: block;
-			}
+			display: block;
 		}
 	}
-}
 
-.nav {
-	@media screen and (max-width: $tablet) {
+	.nav {
 		margin-top: 40px;
 	}
-}
 
-.nav__item {
-	@media screen and (max-width: $tablet) {
+	.nav__item {
 		margin-bottom: 32px;
 		margin-right: auto;
 
@@ -107,10 +98,8 @@
 			margin-bottom: 0;
 		}
 	}
-}
 
-.nav__link {
-	@media screen and (max-width: $tablet) {
+	.nav__link {
 		font-weight: 500;
 		font-size: 40px;
 		line-height: 47px;
@@ -122,15 +111,28 @@
 			color: $accent-color;
 		}
 	}
-}
 
-.nav__link--current {
-	color: $accent-color;
-}
+	.nav__link--current {
+		color: $accent-color;
+	}
 
-.top-contacts__link {
-	@media screen and (max-width: $tablet) {
+	.top-contacts {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.top-contacts__link {
 		&:first-child {
+			margin-top: 32px;
+
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			letter-spacing: 0.02em;
+			color: $link-color;
+		}
+
+		&:last-child {
 			margin-top: 302px;
 
 			font-weight: 500;
@@ -140,21 +142,9 @@
 			letter-spacing: 0.02em;
 			color: $accent-color;
 		}
-
-		&:last-child {
-			margin-top: 32px;
-
-			font-weight: 500;
-			font-size: 24px;
-			line-height: 28px;
-			letter-spacing: 0.02em;
-			color: $link-color;
-		}
 	}
-}
 
-.top-contacts__icon {
-	@media screen and (max-width: $tablet) {
+	.top-contacts__icon {
 		display: none;
 	}
 }

@@ -1,68 +1,40 @@
-.header {
-	@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
+	.header {
 		height: 80px;
 	}
-}
 
-.logo {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 1.2;
-	letter-spacing: 0.03em;
-	color: $black;
-}
-
-.logo__web {
-	color: $accent-color;
-	margin-right: -7px;
-}
-
-.logo__footer {
-	color: $white;
-}
-
-.header__button {
-	@media screen and (min-width: $tablet) {
+	.header__button {
 		display: none;
 	}
-}
 
-.header__menu {
-	@media screen and (min-width: $tablet) {
+	.header__menu {
 		display: flex;
 		align-items: center;
 	}
-}
 
-.nav {
-	@media screen and (min-width: $tablet) {
+	.nav {
 		display: flex;
-		margin-left: 88px;
+		margin-left: 84px;
 		align-items: center;
 
 		list-style-type: none;
 	}
-}
 
-.nav__item {
-	@media screen and (min-width: $tablet) {
+	.nav__item {
 		margin-right: 50px;
 
 		&:last-child {
 			margin-right: 0;
 		}
 	}
-}
 
-.nav__link {
-	@media screen and (min-width: $tablet) {
+	.nav__link {
 		padding-top: 32px;
 		padding-bottom: 32px;
 
 		color: $font-color;
 		font-weight: 500;
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 1.14;
 		letter-spacing: 0.02em;
 
@@ -73,10 +45,8 @@
 			color: $accent-color;
 		}
 	}
-}
 
-.nav__link--current {
-	@media screen and (min-width: $tablet) {
+	.nav__link--current {
 		position: relative;
 
 		color: $accent-color;
@@ -96,18 +66,13 @@
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 		}
 	}
-}
 
-.top-contacts {
-	@media screen and (min-width: $tablet) {
-		margin-left: auto;
+	.top-contacts {
+		margin-left: 84px;
 	}
-}
 
-.top-contacts__link {
-	@media screen and (min-width: $tablet) {
+	.top-contacts__link {
 		display: flex;
-		margin-left: auto;
 
 		font-weight: 500;
 		font-size: 12px;
@@ -127,12 +92,10 @@
 			fill: $accent-color;
 		}
 	}
-}
 
-.top-contacts__icon {
-	@media screen and (min-width: $tablet) {
+	.top-contacts__icon {
 		align-self: center;
-		margin-right: 10px;
+		margin-right: 8px;
 
 		fill: currentColor;
 
@@ -140,10 +103,8 @@
 			fill: currentColor;
 		}
 	}
-}
 
-.social-list {
-	@media screen and (min-width: $tablet) {
+	.social-list {
 		display: none;
 	}
 }

@@ -1,0 +1,17 @@
+@media screen and (min-width: $tablet) {
+	.card-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	.card-list__item {
+		flex-basis: calc(100% / 2 - 30px);
+		margin: 15px;
+	}
+
+	.card-list__signature {
+		width: 353px;
+		height: 146px;
+	}
+}

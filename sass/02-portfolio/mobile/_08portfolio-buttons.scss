@@ -6,9 +6,11 @@
 	}
 
 	.button-block__item {
-		&:nth-last-child(-n + 2) {
-			margin-top: 15px;
-		}
+		margin-top: 15px;
+	}
+
+	.section {
+		padding-top: 45px;
 	}
 }
 

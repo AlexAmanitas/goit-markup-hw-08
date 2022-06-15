@@ -81,6 +81,7 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
   text-align: center;
+  -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 

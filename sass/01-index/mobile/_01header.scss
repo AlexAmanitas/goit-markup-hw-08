@@ -38,14 +38,13 @@
 		background-color: transparent;
 		color: #000;
 
-		&:hover
-	// &:focus
-		{
+		// &:hover
+		&:focus {
 			color: $accent-color;
 		}
 
 		&.is-open {
-			z-index: 2;
+			z-index: 1;
 		}
 
 		&.is-open .header__icon--menu {

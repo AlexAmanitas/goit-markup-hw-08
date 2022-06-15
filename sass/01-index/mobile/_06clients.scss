@@ -45,3 +45,20 @@
 		fill: currentColor;
 	}
 }
+
+@media screen and (max-width: $mobile) {
+	.clients__list {
+		display: block;
+	}
+
+	.clients__item {
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.clients__link {
+		max-width: 450px;
+		width: 100%;
+	}
+}

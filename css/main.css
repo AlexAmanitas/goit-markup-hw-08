@@ -37,7 +37,7 @@ body {
   outline: 1px solid green;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .container {
     max-width: 767px;
   }
@@ -45,7 +45,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -907,10 +907,14 @@ body {
     width: 420px;
     height: 140px;
   }
-  .card-list__figure img {
+  .card-list__image {
     width: 100%;
     max-width: 450px;
   }
+}
+
+.card-list__image {
+  height: 294px;
 }
 
 .card-list__item {
@@ -1195,7 +1199,7 @@ body {
         flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
-  .card-list__signature {
+  .card-list__item:first-child .card-list__signature {
     width: 353px;
     height: 146px;
   }

@@ -10,8 +10,10 @@
 		margin: 15px;
 	}
 
-	.card-list__signature {
-		width: 353px;
-		height: 146px;
+	.card-list__item {
+		&:first-child .card-list__signature {
+			width: 353px;
+			height: 146px;
+		}
 	}
 }

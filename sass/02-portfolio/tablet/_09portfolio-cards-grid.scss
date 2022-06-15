@@ -9,7 +9,9 @@
 		flex-basis: calc(100% / 2 - 30px);
 		margin: 15px;
 	}
+}
 
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
 	.card-list__item {
 		&:first-child .card-list__signature {
 			width: 353px;

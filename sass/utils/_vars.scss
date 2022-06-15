@@ -22,7 +22,7 @@ $portfolio-border-color: #eeeeee;
 $footer-link-color: rgba(255, 255, 255, 0.6);
 $mobile: 480px;
 $tablet: 767px;
-$desctop: 1200px;
+$desktop: 1200px;
 
 .container {
 	max-width: $mobile;
@@ -32,12 +32,12 @@ $desctop: 1200px;
 	padding: 0 15px;
 	outline: 1px solid green;
 
-	@media screen and (min-width: $tablet) and (max-width: $desctop) {
+	@media screen and (min-width: $tablet) and (max-width: $desktop) {
 		max-width: $tablet;
 	}
 
-	@media screen and(min-width:$desctop) {
-		max-width: $desctop;
+	@media screen and(min-width:$desktop) {
+		max-width: $desktop;
 	}
 }
 
@@ -45,7 +45,8 @@ $desctop: 1200px;
 	padding: 60px 0;
 	outline: 1px solid red;
 
-	@media screen and (min-width: $desctop) {
+	@media screen and (min-width: $desktop) {
 		padding: 94px 0;
+		// width: 1600px;
 	}
 }

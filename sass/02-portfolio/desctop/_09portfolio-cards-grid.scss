@@ -1,0 +1,5 @@
+@media screen and(min-width:$desktop) {
+	.card-list__item {
+		flex-basis: calc(100% / 3 - 30px);
+	}
+}

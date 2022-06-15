@@ -1,2 +1,21 @@
-@media screen and(min-width:$desctop) {
+@media screen and(min-width:$desktop) {
+	.nav {
+		margin-left: 93px;
+	}
+
+	.top-contacts {
+		display: flex;
+	}
+
+	.top-contacts__link {
+		display: flex;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+			margin-top: 0;
+		}
+	}
 }

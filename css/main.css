@@ -634,7 +634,8 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 609px;
   background-color: white;
 }

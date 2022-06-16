@@ -1207,8 +1207,8 @@ body {
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .card-list__item:first-child .card-list__signature {
-    width: 353px;
-    height: 146px;
+    width: 353.5px;
+    height: 147px;
   }
 }
 

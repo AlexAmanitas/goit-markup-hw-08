@@ -13,7 +13,9 @@
 
 .address {
 	margin-top: 20px;
-	text-align: center;
+	@media screen and (max-width: $desktop) {
+		text-align: center;
+	}
 }
 
 .address__label {

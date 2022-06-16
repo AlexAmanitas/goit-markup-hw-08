@@ -34,7 +34,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  outline: 1px solid green;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
@@ -51,7 +50,6 @@ body {
 
 .section {
   padding: 60px 0;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 1200px) {
@@ -83,6 +81,13 @@ body {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    text-align: left;
+  }
 }
 
 .logo__web {
@@ -540,7 +545,12 @@ body {
 
 .address {
   margin-top: 20px;
-  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .address {
+    text-align: center;
+  }
 }
 
 .address__label {
@@ -1117,7 +1127,7 @@ body {
 
 @media screen and (min-width: 767px) {
   .hero {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
@@ -1232,6 +1242,66 @@ body {
   .top-contacts__link:last-child {
     margin-right: 0;
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__address {
+    display: block;
+    width: 231px;
+    margin-left: 0;
+  }
+  .address {
+    display: block;
+    margin-top: 20px;
+  }
+  .footer__network {
+    margin: 12px auto 40px 70px;
+  }
+  .footer-form {
+    margin-top: 10px;
+    margin-left: 93px;
+  }
+  .footer-form__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 20px;
+  }
+  .footer-form__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+  }
+  .footer-form__button {
+    margin-left: 12px;
   }
 }
 

@@ -10,10 +10,12 @@
 
 .clients__list {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
+	@media screen and (max-width: $desktop) {
+		flex-wrap: wrap;
+		gap: 30px;
 
-	margin-top: 30px;
+		margin-top: 30px;
+	}
 }
 
 .clients__link {

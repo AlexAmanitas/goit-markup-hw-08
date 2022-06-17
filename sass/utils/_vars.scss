@@ -24,20 +24,29 @@ $mobile: 480px;
 $tablet: 767px;
 $desktop: 1200px;
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
-	max-width: $mobile;
-	width: 100%;
+	@media screen and (max-width: $tablet) {
+		max-width: $mobile;
+		width: 100%;
+	}
+
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 15px;
 	// outline: 1px solid green;
 
 	@media screen and (min-width: $tablet) and (max-width: $desktop) {
-		max-width: $tablet;
+		width: $tablet;
 	}
 
 	@media screen and(min-width:$desktop) {
-		max-width: $desktop;
+		width: $desktop;
 	}
 }
 

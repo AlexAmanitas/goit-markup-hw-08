@@ -1,0 +1,27 @@
+@media screen and (min-width: $desktop) {
+	.team__list {
+		display: flex;
+		margin-top: 50px;
+	}
+
+	.card {
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.team__title {
+		font-size: 36px;
+		line-height: 1.17;
+	}
+
+	.team__list {
+		display: flex;
+		margin-top: 50px;
+	}
+
+	.card__img {
+		width: 270px;
+	}
+}

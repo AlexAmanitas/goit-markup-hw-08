@@ -1,3 +1,5 @@
-.activity {
-	display: none;
+@media screen and (max-width: $desktop) {
+	.activity {
+		display: none;
+	}
 }

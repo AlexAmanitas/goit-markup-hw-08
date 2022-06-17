@@ -1,0 +1,22 @@
+@media screen and (min-width: $desktop) {
+	.clients__title {
+		font-size: 36px;
+	}
+
+	.clients__list {
+		margin-top: 50px;
+	}
+
+	.clients__item {
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.clients__link {
+		width: 170px;
+		height: 92px;
+	}
+}

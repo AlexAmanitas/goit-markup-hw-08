@@ -579,6 +579,9 @@ img {
     margin-right: auto;
     margin-left: auto;
   }
+  .footer__network {
+    margin-top: 60px;
+  }
 }
 
 .address {
@@ -609,9 +612,6 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .footer__network {
-    margin-top: 60px;
-  }
   .footer-form {
     margin-top: 60px;
   }
@@ -1215,17 +1215,22 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) {
   .footer__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .footer__address {
     margin-left: 61px;
   }
   .footer__network {
-    margin-top: 5px;
     margin-left: auto;
     margin-right: 74px;
   }

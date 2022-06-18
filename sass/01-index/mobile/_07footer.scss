@@ -9,6 +9,9 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
+	.footer__network {
+		margin-top: 60px;
+	}
 }
 
 .address {
@@ -36,9 +39,6 @@
 	color: $footer-link-color;
 }
 @media screen and (max-width: $desktop) {
-	.footer__network {
-		margin-top: 60px;
-	}
 	.footer-form {
 		margin-top: 60px;
 	}

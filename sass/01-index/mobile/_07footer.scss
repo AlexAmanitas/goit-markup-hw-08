@@ -35,9 +35,13 @@
 	letter-spacing: 0.03em;
 	color: $footer-link-color;
 }
-
-.footer__network {
-	margin-top: 60px;
+@media screen and (max-width: $desktop) {
+	.footer__network {
+		margin-top: 60px;
+	}
+	.footer-form {
+		margin-top: 60px;
+	}
 }
 
 .footer__title {
@@ -60,9 +64,6 @@
 
 .network-block__icon--footer {
 	fill: $white;
-}
-.footer-form {
-	margin-top: 60px;
 }
 
 .footer__title {

@@ -1,6 +1,7 @@
 @media screen and (min-width: $desktop) {
 	.footer__block {
 		display: flex;
+		align-items: baseline;
 	}
 
 	.footer__address {
@@ -15,11 +16,12 @@
 	}
 
 	.footer__network {
-		margin: 12px auto 40px 70px;
+		// margin: 15px auto 37px 70px;
+		margin-left: 70px;
 	}
 
 	.footer-form {
-		margin-top: 10px;
+		// margin-top: 12px;
 		margin-left: 93px;
 	}
 

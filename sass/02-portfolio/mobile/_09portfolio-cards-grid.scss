@@ -79,14 +79,13 @@
 	top: 0;
 
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 77px 24px;
 	width: 100%;
 	height: 100%;
 
 	background-color: rgba(33, 150, 243, 0.9);
 
-	transform: translateY(105%);
+	transform: translateY(101%);
 	transition: transform 250ms $time-function;
 }
 

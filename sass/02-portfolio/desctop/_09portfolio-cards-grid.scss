@@ -2,4 +2,8 @@
 	.card-list__item {
 		flex-basis: calc(100% / 3 - 30px);
 	}
+
+	.card-list__overlay {
+		padding: 63px 24px;
+	}
 }

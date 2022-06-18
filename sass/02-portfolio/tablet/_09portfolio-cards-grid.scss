@@ -14,8 +14,11 @@
 @media screen and (min-width: $tablet) and (max-width: $desktop) {
 	.card-list__item {
 		&:first-child .card-list__signature {
-			width: 353.5px;
 			height: 147px;
 		}
+	}
+
+	.card-list__overlay {
+		padding: 49px 24px 77px;
 	}
 }

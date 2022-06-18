@@ -260,28 +260,38 @@ img {
 }
 
 .hero {
+  background-color: #2f303a;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
   padding: 118px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
-  /* background-image: url(../images/hero-img.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #2f303a;
 }
 
 @media screen and (max-width: 767px) {
   .hero {
     width: 100%;
     max-width: 480px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/mobile/hero.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/mobile/hero.webp);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/mobile/hero@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/mobile/hero@2x.webp);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero .hero__title {
+    max-width: 360px;
+    width: 100%;
   }
 }
 
 .hero__title {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
@@ -598,8 +608,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__network {
-  margin-top: 60px;
+@media screen and (max-width: 1200px) {
+  .footer__network {
+    margin-top: 60px;
+  }
+  .footer-form {
+    margin-top: 60px;
+  }
 }
 
 .footer__title {
@@ -621,10 +636,6 @@ img {
 
 .network-block__icon--footer {
   fill: #ffffff;
-}
-
-.footer-form {
-  margin-top: 60px;
 }
 
 .footer__title {
@@ -1027,17 +1038,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 77px 24px;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(105%);
-          transform: translateY(105%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1156,6 +1162,22 @@ img {
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .hero {
     max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/tablet/hero.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/tablet/hero.webp);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/tablet/hero@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/tablet/hero@2x.webp);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .hero__title {
+    width: 360px;
   }
 }
 
@@ -1193,7 +1215,7 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .footer__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1244,8 +1266,10 @@ img {
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .card-list__item:first-child .card-list__signature {
-    width: 353.5px;
     height: 147px;
+  }
+  .card-list__overlay {
+    padding: 49px 24px 77px;
   }
 }
 
@@ -1282,8 +1306,21 @@ img {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/desktop/HeroImg.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/HeroImg.webp);
+    background-size: 1600px 600px;
   }
-  .hero__title {
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/desktop/HeroImg@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/HeroImg@2x.webp);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero__title {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
@@ -1402,6 +1439,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__address {
     display: block;
@@ -1413,10 +1453,9 @@ img {
     margin-top: 20px;
   }
   .footer__network {
-    margin: 12px auto 40px 70px;
+    margin-left: 70px;
   }
   .footer-form {
-    margin-top: 10px;
     margin-left: 93px;
   }
   .footer-form__wrap {
@@ -1453,6 +1492,9 @@ img {
   .card-list__item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
+  }
+  .card-list__overlay {
+    padding: 63px 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+@media screen and (min-width: $desktop) {
+	.modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		width: 528px;
+		height: 581px;
+
+		background-color: rgba(255, 255, 255, 1);
+
+		transform: translate(-50%, -50%);
+	}
+
+	.modal-form__title {
+		margin: 40px 0 12px;
+	}
+
+	.checkbox {
+		margin-left: 12px;
+		font-size: 14px;
+	}
+
+	.checkbox__link {
+		font-size: 14px;
+	}
+}

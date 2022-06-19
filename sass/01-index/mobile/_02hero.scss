@@ -5,12 +5,11 @@
 	@media screen and (max-width: $tablet) {
 		width: 100%;
 		max-width: 480px;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url(../../../images/mobile/hero.webp);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero.webp);
 
 		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-				url(../../../images/mobile/hero@2x.webp);
+				url(../images/mobile/hero@2x.webp);
 			background-size: cover;
 		}
 

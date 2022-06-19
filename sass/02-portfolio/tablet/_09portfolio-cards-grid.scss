@@ -12,10 +12,14 @@
 }
 
 @media screen and (min-width: $tablet) and (max-width: $desktop) {
-	.card-list__item {
-		&:first-child .card-list__signature {
-			height: 147px;
-		}
+	.card-list__link {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.card-list__signature {
+		flex-grow: 1;
 	}
 
 	.card-list__overlay {

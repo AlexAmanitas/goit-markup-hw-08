@@ -86,7 +86,14 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-					<button data-modal-open type="button" class="main-button hero__button">Заказать услугу</button>
+					<button
+						data-modal-open
+						type="button"
+						class="main-button hero__button"
+						aria-label="Кнопка открытия модального окна"
+					>
+						Заказать услугу
+					</button>
 				</div>
 			</section>
 
@@ -146,19 +153,37 @@
 					<h2 class="activity__title">Чем мы занимаемся</h2>
 					<ul class="activity__list">
 						<li class="activity-img">
-							<img src="images/box1.jpg" alt="рука клавиатура дисплей" width="370" />
+							<img
+								srcset="images/desktop/box1.webp 1x, images/desktop/box1@2x.webp 2x"
+								sizes="370px"
+								src="images/desktop/box1.jpg"
+								alt="рука клавиатура дисплей"
+								width="370"
+							/>
 							<div class="activity-img__signature">
 								<p class="activity-img__label">Десктопные приложения</p>
 							</div>
 						</li>
 						<li class="activity-img">
-							<img src="images/box2.jpg" alt="смартфон рука" width="370" />
+							<img
+								srcset="images/desktop/box2.webp 1x, images/desktop/box2@2x.webp 2x"
+								sizes="370px"
+								src="images/desktop/box2.jpg"
+								alt="смартфон рука"
+								width="370"
+							/>
 							<div class="activity-img__signature">
 								<p class="activity-img__label">Мобильные приложения</p>
 							</div>
 						</li>
 						<li class="activity-img">
-							<img src="images/box3.jpg" alt="планшет стол" width="370" />
+							<img
+								srcset="images/desktop/box3.webp 1x, images/desktop/box3@2x.webp 2x"
+								sizes="370px"
+								src="images/desktop/box3.jpg"
+								alt="планшет стол"
+								width="370"
+							/>
 							<div class="activity-img__signature">
 								<p class="activity-img__label">Дизайнерские решения</p>
 							</div>
@@ -172,7 +197,24 @@
 					<h2 class="team__title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="card">
-							<img class="card__img" src="images/team1.jpg" alt="Фото Игорь Демьяненко" width="270" />
+							<picture>
+								<source
+									srcset="images/desktop/team1.webp 1x, /images/desktop/team1@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/tablet/team1.webp 1x, /images/tablet/team1@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/mobile/team1.webp 1x, /images/mobile/team1@2x.webp 2x"
+									media="(min-width: 450px)"
+									type="image/webp"
+								/>
+								<img class="card__img" src="images/team1.jpg" alt="Фото Игорь Демьяненко" />
+							</picture>
 							<div class="card__body">
 								<h3 class="card__title">Игорь Демьяненко</h3>
 								<p class="card__subtitle">Product Designer</p>
@@ -209,7 +251,24 @@
 							</div>
 						</li>
 						<li class="card">
-							<img class="card__img" src="images/team2.jpg" alt="Фото Ольга Репина" width="270" />
+							<picture>
+								<source
+									srcset="images/desktop/team2.webp 1x, /images/desktop/team2@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/tablet/team2.webp 1x, /images/tablet/team2@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/mobile/team2.webp 1x, /images/mobile/team2@2x.webp 2x"
+									media="(min-width: 450px)"
+									type="image/webp"
+								/>
+								<img class="card__img" src="images/team2.jpg" alt="Фото Ольга Репина" />
+							</picture>
 							<div class="card__body">
 								<h3 class="card__title">Ольга Репина</h3>
 								<p class="card__subtitle">Frontend Developer</p>
@@ -246,7 +305,24 @@
 							</div>
 						</li>
 						<li class="card">
-							<img class="card__img" src="images/team3.jpg" alt="Фото Николай Тарасов" width="270" />
+							<picture>
+								<source
+									srcset="images/desktop/team3.webp 1x, /images/desktop/team3@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/tablet/team3.webp 1x, /images/tablet/team3@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/mobile/team3.webp 1x, /images/mobile/team3@2x.webp 2x"
+									media="(min-width: 450px)"
+									type="image/webp"
+								/>
+								<img class="card__img" src="images/team3.jpg" alt="Фото Николай Тарасов" />
+							</picture>
 							<div class="card__body">
 								<h3 class="card__title">Николай Тарасов</h3>
 								<p class="card__subtitle">Marketing</p>
@@ -283,7 +359,24 @@
 							</div>
 						</li>
 						<li class="card">
-							<img class="card__img" src="images/team4.jpg" alt="Фото Михаил Ермаков" width="270" />
+							<picture>
+								<source
+									srcset="images/desktop/team4.webp 1x, /images/desktop/team4@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/tablet/team4.webp 1x, /images/tablet/team4@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="images/mobile/team4.webp 1x, /images/mobile/team4@2x.webp 2x"
+									media="(min-width: 450px)"
+									type="image/webp"
+								/>
+								<img class="card__img" src="images/team4.jpg" alt="Фото Михаил Ермаков" />
+							</picture>
 							<div class="card__body">
 								<h3 class="card__title">Михаил Ермаков</h3>
 								<p class="card__subtitle">UI Designer</p>

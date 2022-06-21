@@ -45,6 +45,7 @@
 }
 
 .footer__title {
+	display: block;
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -53,7 +54,9 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: $white;
-	text-align: center;
+	@media screen and (max-width: $desktop) {
+		text-align: center;
+	}
 }
 
 .network-block__link--footer {
@@ -64,12 +67,6 @@
 
 .network-block__icon--footer {
 	fill: $white;
-}
-
-.footer__title {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .footer-form__wrap {

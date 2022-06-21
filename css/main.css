@@ -621,6 +621,7 @@ img {
 }
 
 .footer__title {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -628,7 +629,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__title {
+    text-align: center;
+  }
 }
 
 .network-block__link--footer {
@@ -639,12 +645,6 @@ img {
 
 .network-block__icon--footer {
   fill: #ffffff;
-}
-
-.footer__title {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .footer-form__wrap {
@@ -1194,7 +1194,7 @@ img {
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
-  .benefits {
+  .benefits__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1318,6 +1318,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 30px;
@@ -1357,7 +1358,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits {
+  .section.benefits {
+    padding-bottom: 0;
+  }
+  .benefits__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1368,9 +1372,6 @@ img {
   }
   .benefits__item:last-child {
     margin-right: 0;
-  }
-  .section + .section {
-    padding-top: 0px;
   }
 }
 
@@ -1437,7 +1438,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .card__img {
     width: 270px;

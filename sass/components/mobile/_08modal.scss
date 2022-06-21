@@ -32,6 +32,7 @@
 		height: 609px;
 	}
 
+	padding: 40px;
 	background-color: rgba(255, 255, 255, 1);
 
 	// transform: translate(-50%, -50%);
@@ -61,16 +62,8 @@
 	}
 }
 
-.modal-form {
-	padding: 0 40px;
-}
-
 .modal-form__title {
-	@media (max-width: $desktop) {
-		margin-bottom: 12px;
-		padding-top: 40px;
-	}
-
+	margin-bottom: 12px;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 1.14;
@@ -118,6 +111,8 @@
 	padding-left: 30px;
 	height: 40px;
 	margin-top: 4px;
+
+	background-color: transparent;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;

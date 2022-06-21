@@ -69,12 +69,14 @@
 		}
 	}
 
-	.top-contacts {
+	.top-contacts,
+	.header__wrap {
 		margin-left: auto;
 	}
 
 	.top-contacts__link {
 		display: flex;
+		align-items: center;
 
 		font-weight: 500;
 		font-size: 12px;

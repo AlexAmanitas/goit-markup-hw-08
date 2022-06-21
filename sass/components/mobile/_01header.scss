@@ -1,8 +1,11 @@
+header {
+	border-bottom: 1px solid $header-border-color;
+}
+
 .header {
 	display: flex;
 	align-items: center;
 	margin-top: 0;
-	border-bottom: 1px solid $header-border-color;
 
 	position: relative;
 	height: 60px;
@@ -44,13 +47,14 @@
 		background-color: transparent;
 		color: #000;
 
-		// &:hover
-		&:focus {
-			color: $accent-color;
+		&.is-open {
+			color: #000;
+			z-index: 2;
 		}
 
-		&.is-open {
-			z-index: 2;
+		&:hover,
+		&:focus {
+			color: $accent-color;
 		}
 
 		&.is-open .header__icon--menu {
@@ -69,21 +73,21 @@
 	.header__icon--menu {
 		fill: currentColor;
 
-		&:hover,
-		&:focus {
-			fill: currentColor;
-		}
+		// &:hover,
+		// &:focus {
+		// 	fill: currentColor;
+		// }
 	}
 
 	.header__menu {
 		display: none;
 
 		position: absolute;
-		top: calc(100% - 60px);
+		top: 0;
 		left: -2px;
 
 		padding-left: 40px;
-		width: 100vw;
+		width: calc(100vw + 2px);
 		height: 100vh;
 		background-color: $white;
 

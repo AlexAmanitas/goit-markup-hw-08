@@ -756,6 +756,16 @@ header {
   fill: #2196f3;
 }
 
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .modal-form__title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -767,15 +777,6 @@ header {
 }
 
 .modal-form__label {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -783,30 +784,37 @@ header {
   cursor: pointer;
 }
 
-.modal-form__label:last-child {
-  margin-bottom: 0;
+.modal-form__field {
+  position: relative;
 }
 
-.modal-form__label:focus-within > .modal-form__input,
-.modal-form__label:hover > .modal-form__input {
+.modal-form__field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-form__field:focus-within > .modal-form__input,
+.modal-form__field:hover > .modal-form__input {
   border: 1px solid #2196f3;
 }
 
-.modal-form__label:focus-within > .modal-form__icon,
-.modal-form__label:hover > .modal-form__icon {
+.modal-form__field:focus-within > .modal-form__icon,
+.modal-form__field:hover > .modal-form__icon {
   fill: #2196f3;
 }
 
 .modal-form__icon {
   position: absolute;
-  top: 28px;
+  top: 50%;
   left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .modal-form__input {
   padding-left: 30px;
   height: 40px;
   margin-top: 4px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -849,6 +857,10 @@ header {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form__textarea:focus-within, .modal-form__textarea:hover {
+  border: 1px solid #2196f3;
 }
 
 .checkbox {
@@ -1339,16 +1351,16 @@ header {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/desktop/HeroImg.webp);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/HeroImg.webp);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/HeroImg.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/HeroImg.webp);
     background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/desktop/HeroImg@2x.webp);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/desktop/HeroImg@2x.webp);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/HeroImg@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/HeroImg@2x.webp);
   }
 }
 

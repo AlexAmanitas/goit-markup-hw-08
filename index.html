@@ -543,37 +543,36 @@
 				</button>
 				<form name="modal-order" class="modal-form">
 					<h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
-					<label class="modal-form__label">
+					<label for="username" class="modal-form__label">Имя</label>
+					<div class="modal-form__field">
+						<input class="modal-form__input" type="text" name="username" id="username" />
 						<svg class="modal-form__icon" width="18" height="18">
 							<use href="./images/sprite.svg#icon-person-black"></use>
 						</svg>
-						Имя
-						<input class="modal-form__input" type="text" name="username" />
-					</label>
-					<label class="modal-form__label">
+					</div>
+					<label for="phone" class="modal-form__label">Телефон</label>
+					<div class="modal-form__field">
+						<input class="modal-form__input" type="tel" name="phone" id="phone" />
 						<svg class="modal-form__icon" width="18" height="18">
 							<use href="./images/sprite.svg#icon-phone-black"></use>
 						</svg>
-						Телефон
-						<input class="modal-form__input" type="tel" name="phone" />
-					</label>
-					<label class="modal-form__label">
+					</div>
+					<label for="mail" class="modal-form__label">Почта</label>
+					<div class="modal-form__field">
+						<input class="modal-form__input" type="email" name="mail" id="mail" />
 						<svg class="modal-form__icon" width="18" height="18">
 							<use href="./images/sprite.svg#icon-email-black"></use>
 						</svg>
-						Почта
-						<input class="modal-form__input" type="email" name="mail" />
-					</label>
-					<label class="modal-form__label">
-						Комментарий
-						<textarea
-							class="modal-form__input modal-form__textarea"
-							name="comment"
-							cols="30"
-							rows="10"
-							placeholder="Введите текст"
-						></textarea>
-					</label>
+					</div>
+
+					<label for="comment" class="modal-form__label">Комментарий</label>
+
+					<textarea
+						class="modal-form__input modal-form__textarea"
+						name="comment"
+						id="comment"
+						placeholder="Введите текст"
+					></textarea>
 
 					<label class="checkbox">
 						<input type="checkbox" class="checkbox__input" />

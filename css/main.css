@@ -887,7 +887,7 @@ header {
   opacity: 1;
 }
 
-.checkbox__input:focus + .chekbox__icon .checkbox__icon--frame {
+.checkbox__input:checked:focus + .chekbox__icon .checkbox__icon--frame {
   fill: #2196f3;
 }
 

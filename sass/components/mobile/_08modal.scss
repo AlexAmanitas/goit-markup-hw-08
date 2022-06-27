@@ -166,7 +166,7 @@
 		opacity: 1;
 	}
 
-	&:focus + .chekbox__icon .checkbox__icon--frame {
+	&:checked:focus + .chekbox__icon .checkbox__icon--frame {
 		fill: $accent-color;
 	}
 

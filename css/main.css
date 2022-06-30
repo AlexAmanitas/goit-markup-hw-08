@@ -1517,13 +1517,6 @@ header {
     margin-top: 20px;
   }
   .footer-form__input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0;
     padding-left: 16px;
     width: 358px;
     height: 50px;

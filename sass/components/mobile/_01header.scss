@@ -38,10 +38,6 @@ header {
 
 @media screen and (max-width: $tablet) {
 	.header__button {
-		display: inline-flex;
-		padding: 0;
-		margin: 0;
-		border: none;
 		margin-left: auto;
 
 		background-color: transparent;
@@ -147,8 +143,6 @@ header {
 		}
 
 		&:last-child {
-			// margin-top: 302px;
-
 			font-weight: 500;
 			font-size: 34px;
 			line-height: 40px;

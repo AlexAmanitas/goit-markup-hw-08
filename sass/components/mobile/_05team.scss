@@ -6,27 +6,46 @@
 .team__title {
 	font-weight: 700;
 	font-size: 28px;
-	line-height: 33px;
-	/* identical to box height */
-
+	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
 
 	color: #212121;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+}
+
+.team__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .card {
-	margin-top: 30px;
+	width: 100%;
 	background-color: $white;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	@media screen and (min-width: $tablet) {
+		width: calc((100% - 30px) / 2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: calc((100% - 90px) / 4);
+	}
 }
+
 .card__img {
-	max-width: 450px;
 	width: 100%;
 }
+
 .card__body {
 	padding: 30px 0;
 }
+
 .card__title {
 	text-align: center;
 
@@ -35,6 +54,7 @@
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 }
+
 .card__subtitle {
 	margin-top: 10px;
 	margin-bottom: 16px;

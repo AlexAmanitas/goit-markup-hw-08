@@ -1,26 +1,38 @@
 .clients__title {
 	font-weight: 700;
 	font-size: 28px;
-	line-height: 33px;
-	/* identical to box height */
-
+	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 30px;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
 }
 
 .clients__list {
 	display: flex;
-	@media screen and (max-width: $desktop) {
-		flex-wrap: wrap;
-		gap: 30px;
+	flex-wrap: wrap;
+	gap: 30px;
+}
 
-		margin-top: 30px;
+.clients__item {
+	width: calc((100% - 30px) / 2);
+
+	@media screen and (min-width: $tablet) {
+		width: calc((100% - 60px) / 3);
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: calc((100% - 150px) / 6);
 	}
 }
 
 .clients__link {
 	display: flex;
-	width: 210px;
+	// width: 210px;
 	height: 92px;
 	justify-content: center;
 	align-items: center;

@@ -1,18 +1,16 @@
 @media screen and (min-width: $desktop) {
 	.footer__block {
-		display: flex;
+		flex-direction: row;
 		align-items: baseline;
 	}
 
 	.footer__address {
 		display: block;
 		width: 231px;
-		margin-left: 0;
 	}
 
 	.address {
-		display: block;
-		margin-top: 20px;
+		text-align: left;
 	}
 
 	.footer__network {
@@ -20,16 +18,18 @@
 	}
 
 	.footer-form {
+		margin-top: 0;
 		margin-left: 93px;
 	}
 
 	.footer-form__wrap {
 		flex-direction: row;
-		margin-top: 20px;
+		align-items: baseline;
 	}
 
 	.footer-form__input {
 		padding-left: 16px;
+		margin-bottom: 0;
 
 		width: 358px;
 		height: 50px;

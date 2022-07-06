@@ -1,24 +1,35 @@
 .footer {
 	padding: 60px 0;
-
 	background-color: $footer-color;
+	@media screen and (min-width: $tablet) {
+	}
 }
 
-@media screen and (max-width: $tablet) {
-	.footer__address {
-		margin-right: auto;
-		margin-left: auto;
+.footer__block {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: $tablet) {
+	.footer__wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 0 74px 0 61px;
 	}
-	.footer__network {
-		margin-top: 60px;
+}
+
+.footer__address {
+	margin-bottom: 60px;
+
+	@media screen and (min-width: $tablet) {
+		margin: 0;
 	}
 }
 
 .address {
 	margin-top: 20px;
-	@media screen and (max-width: $desktop) {
-		text-align: center;
-	}
+	text-align: center;
 }
 
 .address__label {
@@ -39,14 +50,12 @@
 	color: $footer-link-color;
 }
 
-@media screen and (max-width: $desktop) {
-	.footer-form {
-		margin-top: 60px;
-	}
+.footer-form {
+	margin-top: 60px;
 }
 
 .footer__title {
-	display: block;
+	// display: block;
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -73,27 +82,23 @@
 .footer-form__wrap {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .footer-form__input {
 	padding-left: 16px;
 	margin-bottom: 20px;
+	width: 450px;
+	height: 50px;
+
 	font-size: 16px;
 	line-height: 1.25;
-	// width: 450px;
-	height: 50px;
 	letter-spacing: 0.03em;
-
 	color: rgba(255, 255, 255, 0.6);
 	background-color: $footer-color;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
-}
-
-.footer-form__button {
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .main-button__icon {

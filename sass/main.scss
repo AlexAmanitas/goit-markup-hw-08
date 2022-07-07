@@ -3,6 +3,13 @@
 @import "./utils/vars";
 @import "./utils/reset";
 
-@import "./components/mobile/index-mob";
-@import "./components/tablet/index-tab";
-@import "./components/desktop/index-desk";
+@import "./components/01header";
+@import "./components/02hero";
+@import "./components/03benefits";
+@import "./components/04activity";
+@import "./components/05team";
+@import "./components/06clients";
+@import "./components/07footer";
+@import "./components/08modal";
+@import "./components/09portfolio-buttons";
+@import "./components/10portfolio-cards-grid";

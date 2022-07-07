@@ -1,17 +1,20 @@
-@media screen and (max-width: $tablet) {
-	.button-block {
-		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: 40px;
-	}
+.button-block {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	margin-top: -15px;
 
-	.button-block__item {
-		margin-top: 15px;
+	@media screen and (min-width: $tablet) {
+		justify-content: center;
+		margin-bottom: 30px;
 	}
+	@media screen and(min-width:$desktop) {
+		margin-bottom: 50px;
+	}
+}
 
-	.section {
-		padding-top: 45px;
-	}
+.button-block__item {
+	margin-top: 15px;
 }
 
 .button-block__item {

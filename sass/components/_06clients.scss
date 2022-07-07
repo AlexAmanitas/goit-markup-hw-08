@@ -19,7 +19,11 @@
 }
 
 .clients__item {
-	width: calc((100% - 30px) / 2);
+	width: 100%;
+
+	@media screen and (min-width: 334px) {
+		width: calc((100% - 30px) / 2);
+	}
 
 	@media screen and (min-width: $tablet) {
 		width: calc((100% - 60px) / 3);
@@ -57,22 +61,5 @@
 	&:hover,
 	&:focus {
 		fill: currentColor;
-	}
-}
-
-@media screen and (max-width: $mobile) {
-	.clients__list {
-		display: block;
-	}
-
-	.clients__item {
-		margin-top: 30px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.clients__link {
-		max-width: 450px;
-		width: 100%;
 	}
 }

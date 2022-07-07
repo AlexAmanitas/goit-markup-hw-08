@@ -21,7 +21,7 @@ $header-border-color: #ececec;
 $portfolio-border-color: #eeeeee;
 $footer-link-color: rgba(255, 255, 255, 0.6);
 $mobile: 480px;
-$tablet: 767px;
+$tablet: 768px;
 $desktop: 1200px;
 
 img {
@@ -31,22 +31,20 @@ img {
 }
 
 .container {
-	@media screen and (max-width: $tablet) {
-		max-width: $mobile;
-		width: 100%;
-	}
+	max-width: $mobile;
+	width: 100%;
 
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 15px;
 	// outline: 1px solid green;
 
-	@media screen and (min-width: $tablet) and (max-width: $desktop) {
-		width: $tablet;
+	@media screen and (min-width: $tablet) {
+		max-width: $tablet;
 	}
 
 	@media screen and(min-width:$desktop) {
-		width: $desktop;
+		max-width: $desktop;
 	}
 }
 

@@ -460,6 +460,7 @@ header {
 }
 
 .header__button.is-open {
+  position: fixed;
   color: #000;
   z-index: 2;
 }
@@ -489,9 +490,10 @@ header {
 
 .header__menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -2px;
+  overflow: auto;
   padding-left: 40px;
   width: calc(100vw + 2px);
   height: 100vh;
@@ -1731,9 +1733,6 @@ header {
 
 .button-block__item {
   margin-top: 15px;
-}
-
-.button-block__item {
   margin-right: 8px;
 }
 

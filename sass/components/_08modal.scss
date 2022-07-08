@@ -33,6 +33,14 @@
 		width: 100%;
 	}
 
+	@media (min-width: $desktop) {
+		max-width: 528px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
 	padding: 40px;
 	background-color: rgba(255, 255, 255, 1);
 	transform: translate(0, 0) scale(1, 1);

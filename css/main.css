@@ -397,12 +397,6 @@ img {
   overflow: hidden;
 }
 
-@media screen and (min-width: 1200px) {
-  .no-scroll {
-    padding-right: 2.1vw;
-  }
-}
-
 header {
   border-bottom: 1px solid #ececec;
   position: relative;
@@ -533,6 +527,15 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu.is-open {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .nav {
@@ -1500,6 +1503,17 @@ header {
     overflow: auto;
     max-width: 450px;
     width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 

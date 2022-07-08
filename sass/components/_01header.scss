@@ -108,6 +108,10 @@ header {
 		justify-content: space-between;
 
 		z-index: 1;
+
+		@media screen and(min-width:$tablet) {
+			flex-direction: row;
+		}
 	}
 }
 

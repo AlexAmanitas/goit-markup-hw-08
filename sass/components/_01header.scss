@@ -45,10 +45,10 @@ header {
 
 	background-color: transparent;
 	color: #000;
+	cursor: pointer;
 
 	&.is-open {
-		// position: fixed;
-		color: #000;
+		// color: #000;
 		z-index: 2;
 	}
 
@@ -286,7 +286,6 @@ header {
 
 .top-contacts__icon {
 	display: none;
-
 	@media screen and (min-width: $tablet) {
 		display: block;
 		margin-right: 8px;
@@ -295,6 +294,27 @@ header {
 		&:hover {
 			fill: currentColor;
 		}
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-right: 10px;
+	}
+}
+
+.top-contacts__icon--mail {
+	width: 14px;
+	height: 10px;
+	@media screen and (min-width: $desktop) {
+		width: 16px;
+		height: 12px;
+	}
+}
+.top-contacts__icon--phone {
+	width: 10px;
+	height: 14px;
+
+	@media screen and (min-width: $desktop) {
+		height: 16px;
 	}
 }
 

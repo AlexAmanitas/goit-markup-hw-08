@@ -74,7 +74,16 @@
 	top: 0;
 
 	display: flex;
-	padding: 77px 24px;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 24px;
+
+	overflow: auto;
+
+	@media screen and (min-width: 379px) {
+		padding: 77px 24px;
+		align-items: center;
+	}
 
 	@media screen and (min-width: $tablet) {
 		padding: 49px 24px 77px;
